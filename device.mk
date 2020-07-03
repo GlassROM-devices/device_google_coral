@@ -950,3 +950,28 @@ endif
 # Write flags to the vendor space in /misc partition.
 PRODUCT_PACKAGES += \
     misc_writer
+
+# GlassROM modifcation start
+# Bluetooth
+PRODUCT_PACKAGES += \
+    GreenTooth
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/google/coral/overlay-lineage
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/coral/overlay-lineage/lineage-sdk
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
+# Utilities
+PRODUCT_PACKAGES += \
+    libjson \
+    libtinyxml
+# End GlassROM modification

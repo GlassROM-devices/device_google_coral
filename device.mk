@@ -952,6 +952,9 @@ PRODUCT_PACKAGES += \
     misc_writer
 
 # GlassROM modifcation start
+# APEX
+PRODUCT_PROPERTY_OVERRIDES += ro.apex.updatable=false
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     GreenTooth

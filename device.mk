@@ -955,6 +955,9 @@ PRODUCT_PACKAGES += \
 # APEX
 PRODUCT_PROPERTY_OVERRIDES += ro.apex.updatable=false
 
+# Adoptable Storage
+PRODUCT_PROPERTY_OVERRIDES += ro.crypto.allow_encrypt_override=true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     GreenTooth

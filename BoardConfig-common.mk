@@ -206,6 +206,14 @@ TARGET_HAS_HDR_DISPLAY := true
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+# Media
+TARGET_PROVIDES_LIBPLATFORMCONFIG := true
+
+# RIL
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_RIL_VARIANT := caf
+TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
+
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := device/google/coral/manifest.xml
 DEVICE_MATRIX_FILE := device/google/coral/compatibility_matrix.xml
